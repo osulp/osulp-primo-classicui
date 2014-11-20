@@ -1,0 +1,32 @@
+/* Language drop-down removal allignement fix */ 
+#exlidMainMenuTile div.EXLMainMenuContainer { float: right } 
+
+/* Locations tab must be disabled for Primo-Alma integrations */ 
+.EXLTabsRibbon div li.EXLLocationsTab { display: none } 
+
+/* Removing Reviews and Tags */ 
+.EXLTabsRibbon div li.EXLReviewsTab { display: none }
+
+/*---Changing width of Advanced Search button---*/
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch { width: 8.5em;}
+
+/*--Remove the more (1) link in the centralized publishing model--*/
+.EXLTabHeaderContent em.EXLTabHeaderContentAdditionalDataLineMore { display:none }
+
+/*-- Add numbers to search results --*/
+.EXLResultsList td.EXLResultNumber {vertical-align: top; display:table-cell; *display:block; width:1%; padding-top: 5px;} /* note the *display hack for ie6/7 */
+
+/* tweak sign-in link on request tab, jlw 2013.09.24 */ 
+.EXLTabHeader div.EXLTabHeaderContent em.EXLTabHeaderContentAdditionalDataLine {font-weight: normal} 
+.EXLTabHeader div.EXLTabHeaderContent em.EXLTabHeaderContentAdditionalDataLineInstName {display: none} 
+.EXLTabHeader div.EXLTabHeaderContent em.EXLTabHeaderContentAdditionalDataLineSignIn {float: left; font-weight: bold}
+
+/*--Hide Times Cited tab--*/
+.EXLCitationsTab.EXLResultTab.EXLServiceConditionalTab  {
+    display: none !important;
+}
+
+/* Reduce font size in Scopes dropdown */
+#scopesList > div.EXLSearchFieldRibbonFormSelectedCollection {
+	font-size: .95em;
+}
