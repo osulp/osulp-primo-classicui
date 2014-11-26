@@ -1,3 +1,49 @@
+
+/* Reduce width of search result display, to make room for Sidebar */
+#resultsTileNoId {
+	width: 58%;
+	margin-right: 1em;
+}
+
+#osuSidebar {
+	width: 17%;
+	float: right;
+	margin-left: 1em;
+	border-left: 1px solid #D7DDE3;
+	padding-left: 1em;
+}
+
+#osuSidebar p {
+	font-size: .95em;
+}
+
+#osuSidebar ul {
+	margin-left: 1.3em;
+}
+
+#osuSidebar ul li {
+	font-size: .95em;
+}
+
+
+/* Hide chat logo in Search tile 'Banner' position */
+#exlidSearchBanner {
+	display: none;
+}
+
+
+/* Reduce font size in Scopes dropdown */
+#scopesList > div.EXLSearchFieldRibbonFormSelectedCollection {
+	font-size: .95em;
+}
+
+
+.EXLFacetRSSAction {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
 /* Language drop-down removal allignement fix */ 
 #exlidMainMenuTile div.EXLMainMenuContainer { float: right } 
 
@@ -26,7 +72,3 @@
     display: none !important;
 }
 
-/* Reduce font size in Scopes dropdown */
-#scopesList > div.EXLSearchFieldRibbonFormSelectedCollection {
-	font-size: .95em;
-}
