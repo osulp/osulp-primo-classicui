@@ -6,7 +6,7 @@
 }
 
 #osuSidebar {
-	width: 17%;
+	width: 16%;
 	float: right;
 	margin-left: 1em;
 	border-left: 1px solid #D7DDE3;
@@ -26,7 +26,13 @@
 }
 
 
-/* Hide chat logo in Search tile 'Banner' position */
+/* Make header menu wider to not wrap links on 2 lines (was 40em) */
+#exlidMainMenuTile div.EXLMainMenuContainer {
+	width: 50em !important;
+}
+
+
+/* Hide chat logo in Search 'Banner' position */
 #exlidSearchBanner {
 	display: none;
 }
