@@ -32,6 +32,16 @@
 }
 
 
+/* Hide ExLibris' Help link */
+ul#exlidMainMenuRibbon li.EXLLastItem {
+	display:none;
+}
+/* Hide menu separator from new 'last' link */
+#exlidMainMenuItem6 span {
+	border-right: 0px !important;
+}
+
+
 /* Hide chat logo in Search 'Banner' position */
 #exlidSearchBanner {
 	display: none;
