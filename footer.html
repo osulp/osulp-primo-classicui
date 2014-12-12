@@ -21,7 +21,7 @@
   </div>
 
 
-<!-- Place this script as near to the end of your BODY as possible. -->
+<!-- LibraryH3lp Chat Box - Place this script as near to the end of your BODY as possible. -->
 <script type="text/javascript">
   (function() {
     var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
@@ -31,10 +31,13 @@
 </script>
 
 
-<!-- Change the Chat banner URL - temporary since we can't access that Tile directly -->
 <script type="text/javascript">
 
+// Change the Chat banner URL - temporary since we can't access that Tile directly 
 $("#exlidSearchBanner a img").attr('src', 'http://primo.library.oregonstate.edu/chat.png');
+
+// Move RSS, Save Query and Save Page to E-shelf div above facets
+$('div.EXLFacetList:last-of-type').insertBefore('div.EXLFacetList:first-of-type'); 
 
 </script>
 
