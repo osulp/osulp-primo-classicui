@@ -89,7 +89,7 @@ form[name=uResolverViewItForm] ul li a:link {
 	display: block;
 	font-weight: bold;
 	color: #990000;
-	text-decoration: none;
+	text-decoration: underline !important;
 }
 
 
