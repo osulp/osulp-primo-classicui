@@ -72,9 +72,6 @@ ul#exlidMainMenuRibbon li.EXLLastItem {
 /*---Changing width of Advanced Search button---*/
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch { width: 8.5em;}
 
-/*--Remove the more (1) link in the centralized publishing model--*/
-.EXLTabHeaderContent em.EXLTabHeaderContentAdditionalDataLineMore { display:none }
-
 /*-- Add numbers to search results --*/
 .EXLResultsList td.EXLResultNumber {vertical-align: top; display:table-cell; *display:block; width:1%; padding-top: 5px;} /* note the *display hack for ie6/7 */
 
@@ -86,5 +83,16 @@ ul#exlidMainMenuRibbon li.EXLLastItem {
 /*--Hide Times Cited tab--*/
 .EXLCitationsTab.EXLResultTab.EXLServiceConditionalTab  {
     display: none !important;
+}
+
+
+/* Originally added by someone on 1/13/15 to /uploaded_files/css */
+/* For the "More" link's list of institutional availability, make the
+ * institution names just be text and not hotlinks.  */
+em.EXLInstititutionSelectionInstName, em.EXLInstititutionSelectionInstName a 
+{
+    pointer-events: none;
+    cursor: default;
+    color: black;
 }
 
