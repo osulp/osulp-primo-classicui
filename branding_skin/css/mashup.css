@@ -93,6 +93,14 @@ form[name=uResolverViewItForm] ul li a:link {
 }
 
 
+/* Hide fields on Request form */
+
+li > label[for=selectMaterialType], #selectMaterialType, 
+li > label[for=selectLoanPeriod], #selectLoanPeriod,
+li > label[for=noNeedAfterDate], #noNeedAfterDate, #noNeedAfterV > a.dp-choose-date {
+	display: none;
+}
+
 
 
 /** {
