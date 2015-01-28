@@ -1251,4 +1251,84 @@ Classes bellow are used to define the look and feel of the date & time component
 .ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa url(/infra/css/images/ui-bg_flat_0_aaaaaa_40x100.png?version=1.0) 50% 50% repeat-x; opacity: .3;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }*/
 
 
+/*Changes for Summit 3*/
+ 
+/*Title*/
+#bookTitleH > label:nth-child(1){display:none;}
+#bookTitleH{display:none;}
+#bookTitleV{display:none;}
+/*Author*/
+div.clearfix:nth-child(19) > ul:nth-child(1) > li:nth-child(9){display:none;}
+#authorsInput{display:none;}
+/*Edition*/
+#editionH > label:nth-child(1){display:none;}
+#editonInput{display:none;}
+/*ISBN*/
+#isbnH > label:nth-child(1){display:none;}
+#isbnInput{display:none;}
+/*LCCN*/
+div.clearfix:nth-child(19) > ul:nth-child(1) > li:nth-child(23) > label:nth-child(1){display:none;}
+#lccNumberInput{display:none;}
+/*OCLC Number*/
+div.clearfix:nth-child(19) > ul:nth-child(1) > li:nth-child(25) > label:nth-child(1){display:none;}
+#oclcNumberInput{display:none;}
+/*Publisher*/
+#publisherH > label:nth-child(1){display:none;}
+#publisherInput{display:none;}
+/*Citaytion Type*/
+div.clearfix:nth-child(19) > ul:nth-child(1) > li:nth-child(2){display:none;}
+div.clearfix:nth-child(19) > ul:nth-child(1) > li:nth-child(2){display:none;}
+div.clearfix:nth-child(19) > ul:nth-child(1) > li:nth-child(1) > label:nth-child(1){display:none;}
+/*author initials*/
+div.clearfix:nth-child(19) > ul:nth-child(1) > li:nth-child(11) > label:nth-child(1){display:none;}
+#authInitInput{ display: none;}
+/*publication date*/
+#yearH{display: none;}
+#yearInput{ display: none;}
+/*Place of publication*/
+li.width24:nth-child(35) > label:nth-child(1){display:none;}
+#placeOfPublicationInput{ display: none;}
+/*Additional Author*/
+li.width24:nth-child(37) > label:nth-child(1){display:none;}
+#additionalAuthorInput{ display: none;}
+/*Part*/
+#partH{ display: none;}
+#partInput{ display: none;}
+/*Chapter*/
+li.width24:nth-child(43) > label:nth-child(1){ display: none;}
+#chapterInput{ display: none;}
+/*Source*/
+li.width24:nth-child(45){ display: none;}
+#sourceInput{ display: none;}
+/*Series title number*/
+li.width24:nth-child(47) > label:nth-child(1){ display: none;}
+#seriesTitleNumberInput{ display: none;}
+/*Pages*/
+li.width24:nth-child(50) > label:nth-child(1){ display: none;}
+#pagesInput{ display: none;}
+/*Format*/
+div.clearfix:nth-child(21) > ul:nth-child(1) > li:nth-child(1){ display: none;}
+div.clearfix:nth-child(21) > ul:nth-child(1) > li:nth-child(2){ display: none;}
+/*Delivery Location*/
+div.clearfix:nth-child(21) > ul:nth-child(1) > li:nth-child(3) > label:nth-child(1){ display: none;}
+div.clearfix:nth-child(21) > ul:nth-child(1) > li:nth-child(4){ display: none;}
+/*Maximum fee:(USD)*/
+div.clearfix:nth-child(21) > ul:nth-child(1) > li:nth-child(25) > label:nth-child(1){ display: none;}
+#maximumFeeInput{ display: none;}
+/*Not needed after*/
+div.clearfix:nth-child(21) > ul:nth-child(1) > li:nth-child(21) > label:nth-child(1){ display: none;}
+#notNeededAfterInput{ display: none;}
+div.clearfix:nth-child(21) > ul:nth-child(1) > li:nth-child(22){ display: none;}
+/*Resource Information Label*/
+.tabContent > form:nth-child(1) > h2:nth-child(18){ display: none;}
 
+div.clearfix:nth-child(19) > ul:nth-child(1) {
+      position: absolute;
+    top: 120px;
+} 
+
+div.clearfix:nth-child(23) > ul:nth-child(1){
+      position: absolute;
+    top: 190px;
+
+} 
