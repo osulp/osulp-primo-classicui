@@ -1340,3 +1340,27 @@ div.clearfix:nth-child(23) > ul:nth-child(1){
     top: 190px;
 
 } 
+
+/*****************************************************************
+  BEGIN:  03/02/15 - Changes Required by March 2015 Alma Release
+******************************************************************/
+
+/* Specific Edition Only */
+#specificEditionH{ display: none;}
+#specificEditionInput{ display: none;}
+/* OCLC Number */
+li.width24:nth-child(27) > label:nth-child(1){ display: none;}
+#oclcNumberInput{ display: none;}
+/* Additional Author */
+li.width24:nth-child(39) > label:nth-child(1){ display: none;}
+#additionalAuthorInput{ display: none;}
+/* Series Title Number */
+li.width24:nth-child(49) > label:nth-child(1){ display: none;}
+#seriesTitleNumberInput{ display: none;}
+/* Pages to photocopy */
+li.width24:nth-child(52) > label:nth-child(1){ display: none;}
+#pagesInput{ display: none;}
+
+/*****************************************************************
+  END:  03/02/15 - Changes Required by March 2015 Alma Release
+******************************************************************/
