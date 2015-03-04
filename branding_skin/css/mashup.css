@@ -93,12 +93,21 @@ form[name=uResolverViewItForm] ul li a:link {
 }
 
 
-/* Hide fields on Request form */
+/* Hide fields on Summit Request form */
 
 li > label[for=selectMaterialType], #selectMaterialType, 
 li > label[for=selectLoanPeriod], #selectLoanPeriod,
+li > label[for=commentInput], #commentInput,
+li > label[for=volumeInput], #volumeInput,
 li > label[for=noNeedAfterDate], #noNeedAfterDate, #noNeedAfterV > a.dp-choose-date {
 	display: none;
+}
+
+
+/* Adjust list element margin */
+
+.formView li {
+	margin-bottom: 0;
 }
 
 
