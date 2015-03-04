@@ -60,6 +60,12 @@ ul#exlidMainMenuRibbon li.EXLLastItem {
 }
 
 
+/* Hide SMS input box and label in My Account */
+label[for=sms_number], input#sms_number {
+  display: none !important;
+}
+
+
 /* Language drop-down removal allignement fix */ 
 #exlidMainMenuTile div.EXLMainMenuContainer { float: right } 
 
