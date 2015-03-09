@@ -21,7 +21,7 @@ When extracted from the zip, all classes will be commented out.
 
 *****************************************/
 
-/*  "Find or request" tab (or 'Availability & Request Options')  */
+/* ===== "Availability & Request Options" tab (was "Find or request" tab) ===== */
 
 /* Hide the "barcode" column */
 .itemsList #TABLE_DATA_item_list th:first-of-type,
@@ -29,7 +29,6 @@ When extracted from the zip, all classes will be commented out.
 
 /* Hide the Year, Volume and Description filter dropdown menus */
 ul.internalSection.formView.clearfix.filterResults { display: none;}
-
 
 /* make holdings info more visible */
 ul.holdingInfo { background: #ffffcc; }
@@ -57,9 +56,7 @@ ul.holdingInfo li.bold::after { content: ":  "; }
 .iframeHeader .iframeHeaderContent em { font-weight: bold !important; }
 
 
-
-
-/* "view online" tab */
+/* ===== "View Online" tab ===== */
 
 /* clear padding on parent containers and bump up the font size */
 form[name=uResolverViewItForm], 
@@ -93,21 +90,30 @@ form[name=uResolverViewItForm] ul li a:link {
 }
 
 
-/* Hide fields on Summit Request form */
+/* ===== Summit Request Form ===== */
 
+/* Hide fields */
 li > label[for=selectMaterialType], #selectMaterialType, 
 li > label[for=selectLoanPeriod], #selectLoanPeriod,
 li > label[for=commentInput], #commentInput,
-li > label[for=volumeInput], #volumeInput,
 li > label[for=noNeedAfterDate], #noNeedAfterDate, #noNeedAfterV > a.dp-choose-date {
 	display: none;
 }
 
-
 /* Adjust list element margin */
-
 .formView li {
 	margin-bottom: 0;
+}
+
+
+/* ===== Actions Dropdown Menu ===== */
+
+#exlidTabHeaderButtons1 > ul > li.EXLTabHeaderButtonSendTo > ol > li.EXLButtonSendToRefWorks
+
+li.EXLButtonSendToRefWorks, 
+li.EXLButtonSendToRefWorks a .EXLButtonSendToLabel, 
+li.EXLButtonSendToRefWorks a .EXLButtonSendToIcon {
+	display: none !important;
 }
 
 
