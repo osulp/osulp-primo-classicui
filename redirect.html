@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Redirecting</title>
+    <!-- START filename: meta-tags.pds -->
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="Sun, 06 Nov 1994 08:49:37 GMT">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <!-- END   filename: meta-tags.pds -->
+
+    <script language=Javascript>
+        function redirect()
+        {
+            var url =   "https://alliance-primo-pds.hosted.exlibrisgroup.com/Shibboleth.sso/Login?entityID=https://login.oregonstate.edu/idp/shibboleth&target=https://alliance-primo-pds.hosted.exlibrisgroup.com/shib/OSU/pds_main?func=load-login";
+            var urlcom = "&calling_system=primo&institute=OSU&PDS_HANDLE=&url=http://search.library.oregonstate.edu:80/primo_library/libweb/action/login.do?targetURL=http://search.library.oregonstate.edu/primo_library/libweb/action/search.do?vid=OSU";
+            top.location = url + encodeURIComponent(urlcom);
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'EksjaExtremesRegular', Arial, Helvetica, Verdana, sans-serif;
+        }
+        .info-box {
+            width: 40%;
+            margin-left: 30%;
+            margin-top: 10%;
+            padding: 20px;
+            border:  1px solid #C34500;
+        }
+        a {
+            color: #C34500;
+        }
+        .current {
+            font-weight: bold;
+        }
+        .other-users {
+            font-weight: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="info-box">
+    <image src="https://alliance-primo-pds.hosted.exlibrisgroup.com//exlibris/primo/p4_1/pds/html_form/icon/OSU_logo.png" />
+    <h2>Sign In</h2>
+    <p class="current"><a href="#" onClick="redirect()">Current OSU students, faculty and staff</a></p>
+    <p class="other-users"><a href="https://alliance-primo-pds.hosted.exlibrisgroup.com/pds?func=load-login&calling_system=primo&institute=01ALLIANCE_OSU&PDS_HANDLE=&url=http://search.library.oregonstate.edu:80/primo_library/libweb/action/login.do?targetURL=http://search.library.oregonstate.edu/primo_library/libweb/action/search.do?vid=OSU">Community Cardholders</a></p>
+    <p class="other-users"><a href="http://search.library.oregonstate.edu:80/primo_library/libweb/action/login.do?targetURL=http://search.library.oregonstate.edu/primo_library/libweb/action/search.do?vid=OSU">All others continue as guest</a>
+    </p>
+    <hr />
+    <h2>Did You Know?</h2>
+    <p>All OSU Libraries materials that can renew, will automatically renew!  Email notices will still be sent for materials that cannot be renewed like Summit, ILL, recalled and hourly items.</p>
+    <p>Questions? Contact Circulation at (541) 737–7293</p>
+    <hr />
+    <h2>Why Sign In?</h2>
+    <p>OSU students, faculty, and staff have access to additional resources and services.</p>
+    <ul>
+        <li>Access additional full-text content from more journals, databases (e.g., Web of Science) and e-books</li>
+        <li>Borrow books from Summit libraries</li>
+        <li>Easily access and save items and searches to your account</li>
+    </ul>
+</div>
+</body>
+</html>
