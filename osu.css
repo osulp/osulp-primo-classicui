@@ -5,6 +5,12 @@
 	margin-right: 1em;
 }
 
+div#resultsTileNoId.EXLResultsTile.EXLALMAResultsTileNoFacets,
+div#resultsTileNoId.EXLResultsTile.EXLCustomLayoutContainer,
+{
+  width: 97%;
+}
+
 #osuSidebar {
 	width: 16%;
 	float: right;
