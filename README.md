@@ -2,7 +2,7 @@
 
 HTML and CSS files for Primo/1Search. These files live at http://primo.library.oregonstate.edu
 
-Primo Sandbox: http://alliance-pubsb.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=OSU
+Primo Sandbox: http://alliance-primo-sb.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=OSU 
 <br/>Primo Production: http://alliance-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=OSU
 
 ## CSS
