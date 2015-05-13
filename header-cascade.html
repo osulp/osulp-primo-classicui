@@ -42,6 +42,20 @@
         document.cookie = "primofirst=true";
         window.location="http://" + window.location.hostname + "/primo_library/libweb/action/login.do?loginFn=signin&vid=OSU_CASC&targetURL=" + document.URL;
     }
+
+    //This is to create a banner if someone isnt logged in.
+    if ($('#exlidSignOut').hasClass('EXLHidden')) {
+      //For Brief results add the yellow ribbon
+      if ($("#exlidFacetTile").length) {
+        var signInLink = "https://login.oregonstate.edu/cas/login?service=https%3A%2F%2Flogin.oregonstate.edu%2Fidp%2FAuthn%2FRemoteUser"
+        var msg = "You don't know what you're missing. <a href='" + signInLink +
+        "'>Sign in</a> to get results from all available resources.";
+        var appended_string = "<div id='exlidHeaderSystemFeedbackContent' " +
+          "class='EXLSystemFeedback'><strong>" + msg + "</strong></div>";
+        $('#exlidHeaderSystemFeedback').append(appended_string);
+      }
+    }
+
 </script>
 <a href="http://blogs.oregonstate.edu/cascadeslibrary/" title="Oregon State
   University - Cascades Library"><img src="http://primo.library.oregonstate.edu/osu_cascade.png" alt="Oregon State University Libraries" title="Oregon State University Libraries"/></a>
