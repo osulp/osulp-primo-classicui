@@ -42,6 +42,20 @@
         document.cookie = "primofirst=true";
         window.location="http://" + window.location.hostname + "/primo_library/libweb/action/login.do?loginFn=signin&vid=OSU&targetURL=" + document.URL;
     }
+    $(document).ready( function(){
+      if ($('#exlidSignOut').hasClass('EXLHidden')) {
+        //For Brief results add the yellow ribbon
+        if ($("#exlidFacetTile").length) {
+          var signInLink = $('li#exlidSignIn a').attr('href'); 
+          var msg = "You are not signed in.  <a href='" + signInLink +
+          "'>Sign in</a>  for additional full-text and delivery/request options. ";
+          var appended_string = "<div id='exlidHeaderSystemFeedbackContent' " +
+            "class='EXLSystemFeedback'><strong>" + msg + "</strong></div>";
+          $('#exlidHeaderSystemFeedback').append(appended_string);
+        }
+      }
+    });
+ 
 </script>
 <a href="http://osulibrary.oregonstate.edu/" title="Oregon State
   University"><img src="http://primo.library.oregonstate.edu/osu_test.png" alt="Oregon State University Libraries" title="Oregon State University Libraries"/></a>
