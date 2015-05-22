@@ -48,8 +48,8 @@
         //For Brief results add the yellow ribbon
         if ($("#exlidFacetTile").length) {
           var signInLink = $('li#exlidSignIn a').attr('href'); 
-          var msg = "You don't know what you're missing. <a href='" + signInLink +
-          "'>Sign in</a> to get results from all available resources.";
+          var msg = "You are not signed in.  <a href='" + signInLink +
+          "'>Sign in</a>  for additional full-text and delivery/request options. ";
           var appended_string = "<div id='exlidHeaderSystemFeedbackContent' " +
             "class='EXLSystemFeedback'><strong>" + msg + "</strong></div>";
           $('#exlidHeaderSystemFeedback').append(appended_string);
