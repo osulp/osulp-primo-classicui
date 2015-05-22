@@ -10,10 +10,8 @@
   width: 60% !important;
 }
 
-div#resultsTileNoId.EXLResultsTile.EXLALMAResultsTileNoFacets,
-div#resultsTileNoId.EXLResultsTile.EXLCustomLayoutContainer,
-{
-  width: 97%;
+div#resultsTileNoId.osuResultsTile {
+    width: 97%;
 }
 
 #osuSidebar {
