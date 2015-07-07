@@ -25,7 +25,11 @@ Within Primo, when you click certain tabs (Item Details, Availability & Request 
 
 These files are in the `branding_skin` folder (the important one being `branding_skin/css/mashup.css`). To upload to Alma, they need to be zipped up into a file called **skin.zip** with all of the files and folder structure intact. The upload location in Alma is **General Configuration > Configuration Menu > Branding/Logo > Delivery System Skins**
 
-Initial configuration is required to tell Primo to use this Alma skin in the delivery tabs. More details are in the PowerPoint presentation from 10/19/14 from Bill Kelm at Willamette on the Alliance training page. 
+Initial configuration is required to tell Primo to use this Alma skin in the delivery tabs.  To change those settings in the Primo Back Office, go to **General > Mapping Tables > Delivery**, then filter the Mapping table rows by Code `Alma*it` so that *Almagetit* and *Almaviewit* are among the lines displayed.  For both *Almagetit* and *Almaviewit* the end corresponding entry in the Template Code column will have the skin name:
+
+```{{alma_base}}...&req.skin=OSU_summit_request_form```
+
+Change the `req.skin=` parameter to match the name of your skin you uploaded to Alma (or add the parameter if it is missing).
 
 ## Testing
 

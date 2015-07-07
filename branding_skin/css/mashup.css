@@ -96,7 +96,7 @@ form[name=uResolverViewItForm] ul li a:link {
 li > label[for=selectMaterialType], #selectMaterialType, 
 li > label[for=selectLoanPeriod], #selectLoanPeriod,
 li > label[for=commentInput], #commentInput,
-li > label[for=noNeedAfterDate], #noNeedAfterDate, #noNeedAfterV > a.dp-choose-date {
+li > label[for=noNeedAfterDate], #noNeedAfterH, #noNeedAfterV {
 	display: none;
 }
 
