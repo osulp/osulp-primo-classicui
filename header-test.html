@@ -54,6 +54,27 @@
           $('#exlidHeaderSystemFeedback').append(appended_string);
         }
       }
+
+      /**
+       * Change event handler for Scope drop down
+       * ----------------------------------------
+       * The click event for the drop down is fired once when it's clicked then two more times when it's changed, so
+       * we'll store the current value using jQuery.data on the first click and compare that to the value when the last
+       * click is processed.  If it's different, we'll click the "go" button.
+       *
+       * Note that we couldn't tie to the radio button change event as the radios are hidden in this UI and hidden inputs
+       * don't fire a change event.
+       */
+      $('.EXLSearchFieldStrippedText').click(function() {
+          var hidden_scope = $('.EXLSelectedScopeId');
+          var old_scope = jQuery.data(document.body,"old_scope");
+          if (typeof old_scope !== "undefined") {
+              if (old_scope != hidden_scope.val() && $('#search_field').val() != '') {
+                  $('#goButton').click();
+              }
+          }
+          jQuery.data(document.body, "old_scope", hidden_scope.val());
+      });
     });
  
 </script>
