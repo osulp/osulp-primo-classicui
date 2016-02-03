@@ -20,6 +20,13 @@
 
   </div>
 
+<script type="text/javascript">
+  // Insert the placeholder div for the libraryh3lp chat button
+  $("#exlidSearchBanner").html('<div class="needs-js">JavaScript disabled or chat unavailable.</div>');
+
+  // Move RSS, Save Query and Save Page to E-shelf div above facets
+  $('div.EXLFacetList:last-of-type').insertBefore('div.EXLFacetList:first-of-type');
+</script>
 
 <!-- LibraryH3lp Chat Box - Place this script as near to the end of your BODY as possible. -->
 <script type="text/javascript">
@@ -28,17 +35,6 @@
     x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "us.libraryh3lp.com/js/libraryh3lp.js?7905";
     var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
   })();
-</script>
-
-
-<script type="text/javascript">
-
-// Change the Chat banner URL - temporary since we can't access that Tile directly 
-$("#exlidSearchBanner a img").attr('src', 'http://primo.library.oregonstate.edu/chat.png');
-
-// Move RSS, Save Query and Save Page to E-shelf div above facets
-$('div.EXLFacetList:last-of-type').insertBefore('div.EXLFacetList:first-of-type'); 
-
 </script>
 
 <!--end footer-->
