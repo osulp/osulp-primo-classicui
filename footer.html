@@ -21,20 +21,14 @@
   </div>
 
 <script type="text/javascript">
-  // Insert the placeholder div for the libraryh3lp chat button
-  $("#exlidSearchBanner").html('<div class="needs-js">JavaScript disabled or chat unavailable.</div>');
+  // Insert the placeholder div for the LibChat chat button
+  $("#exlidSearchBanner").html('<div id="libchat_18e68d5901aeb45c089a7c18c8ff4672"></div>');
 
   // Move RSS, Save Query and Save Page to E-shelf div above facets
   $('div.EXLFacetList:last-of-type').insertBefore('div.EXLFacetList:first-of-type');
 </script>
 
-<!-- LibraryH3lp Chat Box - Place this script as near to the end of your BODY as possible. -->
-<script type="text/javascript">
-  (function() {
-    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
-    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "us.libraryh3lp.com/js/libraryh3lp.js?7905";
-    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
-  })();
-</script>
+<!-- LibChat Chat Box - Place this script as near to the end of your BODY as possible. Changed  Sept 2016 for migration to LibAnswers -->
+<script src="//v2.libanswers.com/load_chat.php?hash=18e68d5901aeb45c089a7c18c8ff4672"></script>
 
 <!--end footer-->

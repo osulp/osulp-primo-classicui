@@ -76,3 +76,5 @@ em.EXLInstititutionSelectionInstName, em.EXLInstititutionSelectionInstName a
     cursor: default;
     color: black;
 }
+
+#exlidSearchBanner button { font-size: 30px; }
