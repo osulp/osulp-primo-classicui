@@ -79,7 +79,7 @@ em.EXLInstititutionSelectionInstName, em.EXLInstititutionSelectionInstName a
 
 #exlidSearchBanner button { font-size: 30px; }
 
-/* Adjusts width of Ok and Cancel buttons on Cancel Request Dialog box to size automatically for new text */
+/* Adjusts width of Ok and Cancel buttons on Cancel Request Dialog box to size automatically for new text; Sept 26 2016 */
 
 .EXLLighboxConfirmContainer div.EXLLighboxConfirmButtonLink span, .EXLLighboxConfirmContainer div.EXLLighboxConfirmButtonLink span input {
     width: auto;
