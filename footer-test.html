@@ -30,4 +30,13 @@
 <!-- LibChat Chat Box - Place this script as near to the end of your BODY as possible. Changed  Sept 2016 for migration to LibAnswers -->
 <script src="//v2.libanswers.com/load_chat.php?hash=18e68d5901aeb45c089a7c18c8ff4672"></script>
 
+<!-- Changes "OK" and "Cancel" on Cancel Request dialog box to something more user-friendly; Sept 26 2016 -->
+
+<script>
+if (RegExp(/activity=requests/i).test(window.location.href)) {
+  $('#exlidLighboxConfirmButtonOk').val('Yes, Cancel Request');
+  $('#exlidLighboxConfirmButtonCancel').val('No, Keep Request');
+}
+</script>
+
 <!--end footer-->
