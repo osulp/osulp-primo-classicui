@@ -33,7 +33,7 @@
 <!-- Changes "OK" and "Cancel" on Cancel Request dialog box to something more user-friendly; Sept 26 2016 -->
 
 <script>
-if (RegExp(/activity=requests/i).test(window.location.href)) {
+if (RegExp(/(activity=requests|command=cancel)/i).test(window.location.href)) {
   $('#exlidLighboxConfirmButtonOk').val('Yes, Cancel Request');
   $('#exlidLighboxConfirmButtonCancel').val('No, Keep Request');
 }
