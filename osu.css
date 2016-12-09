@@ -84,3 +84,9 @@ em.EXLInstititutionSelectionInstName, em.EXLInstititutionSelectionInstName a
 .EXLLighboxConfirmContainer div.EXLLighboxConfirmButtonLink span, .EXLLighboxConfirmContainer div.EXLLighboxConfirmButtonLink span input {
     width: auto;
 }
+
+/* Adds all links to Virtual Browse due to VB not working - 9 Dec 2016, DM */
+
+.EXLTabsRibbon div li.EXLBrowseshelfTab {
+    display: none;
+}
