@@ -39,12 +39,23 @@ if (RegExp(/(activity=requests|command=cancel)/i).test(window.location.href)) {
 }
 </script>
 
-<style>
-/* Adds all links to Virtual Browse due to VB not working - 9 Dec 2016, DM */
+<!-- Adds placeholder text to course reserve tab input -->
+<script>
+    if ( $("#exlidTab1").hasClass("EXLSearchTabSelected")) {
+        $("input#search_field").attr("placeholder", "Search by course name, number, instructor, or title");
+    }
+    else
+        {
+        $("input#search_field").attr("placeholder", "Search Books, Articles, and more");
+    }
+</script>
 
-.EXLTabsRibbon div li.EXLBrowseshelfTab {
-    display: none;
-}
+
+<!-- Hide Virtual Browse tab until VB works again; 09 Dec 2016 -->
+<style>
+    .EXLTabsRibbon div li.EXLBrowseshelfTab {
+        display: none;
+    }
 </style>
 
 <!--end footer-->
