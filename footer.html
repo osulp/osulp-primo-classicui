@@ -58,4 +58,52 @@ if (RegExp(/(activity=requests|command=cancel)/i).test(window.location.href)) {
     }
 </style>
 
+<!-- Google Analytics and Open URL testing -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35760875-20');
+  ga('send', 'pageview');
+  ga('set', 'anonymizeIp', true);
+</script>
+
+<script>
+(function() {
+  var sent = [];
+  var iframeSelector = "iframe[src*='alma.exlibrisgroup.com/view/uresolver/']:visible";
+  var removeIp = function(url) {return url.replace(/user_ip=[\d.]+(&)?/g, '')};
+  var sendResolverEvents = function() {
+    var send = function(label, url) {
+      url = removeIp(url);
+      if ( $.inArray(label+url, sent) === -1 ) {
+        ga('send', 'event', 'Alma Resolver', label, url);
+        sent.push(label+url);
+      }
+    };
+    $(".EXLContainer-requestTab "    + iframeSelector).each(function() {
+      var url = $(this).attr('src');
+      send('GetIt 1', url);
+    });
+    $(".EXLContainer-moreTab "       + iframeSelector).each(function() {
+      var url = $(this).attr('src');
+      send('GetIt 2', url);
+    });
+    $(".EXLContainer-viewOnlineTab " + iframeSelector).each(function() {
+      var url = $(this).attr('src');
+      send('ViewIt', url);
+    });
+  }
+  sendResolverEvents();
+  $(document).ajaxComplete(function(event, request, settings) {
+    if (RegExp("expand\\.do").test(settings.url)) {
+      sendResolverEvents();
+    }
+  });
+})();
+</script>
+
 <!--end footer-->
